@@ -17,7 +17,10 @@ const Right = styled.div`
 const Footer = () => {
   return (
     <Container>
-      <Left></Left>
+      <Left>
+        <Logo>BetterShop.</Logo>
+        <Desc></Desc>
+      </Left>
       <Center></Center>
       <Right></Right>
     </Container>
