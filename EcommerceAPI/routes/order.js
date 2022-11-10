@@ -7,7 +7,6 @@ const {
 const router = express.Router();
 const CryptoJS = require("crypto-js");
 const Order = require("../models/Order");
-const { json } = require("express");
 
 //CREATE
 router.post("/", verifyToken, async (req, res) => {
