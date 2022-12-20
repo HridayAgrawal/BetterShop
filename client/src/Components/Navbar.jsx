@@ -81,11 +81,17 @@ const Navabr = () => {
           </SearchContainer>
         </Left>
         <Center>
-          <Logo>BetterShop.</Logo>
+          <Link to="/" style={{ textDecoration: "none" }}>
+            <Logo>BetterShop.</Logo>
+          </Link>
         </Center>
         <Right>
-          <MenuItem>REGISTER</MenuItem>
-          <MenuItem>SIGN IN</MenuItem>
+          <Link to="/register" style={{ textDecoration: "none" }}>
+            <MenuItem>REGISTER</MenuItem>
+          </Link>
+          <Link to="/login" style={{ textDecoration: "none" }}>
+            <MenuItem>SIGN IN</MenuItem>
+          </Link>
           <Link to="/cart">
             <MenuItem>
               <Badge badgeContent={quantity} color="primary">

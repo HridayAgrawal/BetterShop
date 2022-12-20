@@ -34,7 +34,7 @@
 import React from "react";
 import { useEffect } from "react";
 import { useState } from "react";
-import { useLocation, useNavigate } from "react-router-dom";
+import { Link, useLocation, useNavigate } from "react-router-dom";
 import { userRequest } from "../requestMethods";
 
 const Success = () => {
@@ -76,12 +76,9 @@ const Success = () => {
       {orderId
         ? `Order has been created successfully. Your order number is ${orderId}`
         : `Successfull. Your order is being prepared...`}
-      <button
-        onClick={() => navigate(-3)}
-        style={{ padding: 10, marginTop: 20 }}
-      >
-        Go to Homepage
-      </button>
+      <Link to="/" style={{ textDecoration: "none" }}>
+        <button style={{ padding: 10, marginTop: 20 }}>Go to Homepage</button>
+      </Link>
     </div>
   );
 };
