@@ -1,1 +1,2 @@
-# BetterShop :- Ecommerce website made with the MERN stack . Users can peform crud operations.
+# BetterShop :->
+Ecommerce website made with the MERN stack . Users can peform CRUD operations.
