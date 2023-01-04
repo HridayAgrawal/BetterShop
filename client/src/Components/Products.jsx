@@ -15,13 +15,15 @@ const Products = ({ cat, filters, sort }) => {
   const [products, setProducts] = useState([]);
   const [filteredProducts, setFilteredProducts] = useState([]);
 
+  //http://localhost:5000/api
+
   useEffect(() => {
     const getProducts = async () => {
       try {
         const res = await axios.get(
           cat
-            ? `http://localhost:5000/api/products?category=${cat}`
-            : "http://localhost:5000/api/products"
+            ? `https://bettershop-api.onrender.com/api/products?category=${cat}`
+            : "https://bettershop-api.onrender.com/api/products"
         );
         setProducts(res.data);
       } catch (err) {}
